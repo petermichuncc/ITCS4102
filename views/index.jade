@@ -1,0 +1,27 @@
+extends layout
+
+block body
+  #wrapper
+    #logo
+        img(src='/images/angularjs.jpg')
+     #display
+        #login
+          h2 Website reviews 
+           ul
+            li
+              a(href='/') Home
+            li
+              a(href='/addPost') Add a new website
+
+    div(ng-view)
+      #footer
+        div Copyright © MEAN Stack #{+new Date().getFullYear()}  
+        a(href='/page?name=about') About 
+        | |  
+        a(href='/page?name=contact') Contact Us 
+  script(src='js/lib/angular/angular.js')
+  script(src='js/app.js')
+  script(src='js/services.js')
+  script(src='js/controllers.js')
+  script(src='js/filters.js')
+  script(src='js/directives.js')
