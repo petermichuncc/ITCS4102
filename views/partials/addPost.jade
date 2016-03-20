@@ -1,7 +1,9 @@
 h2 Review another website
 label(for='title') Name: 
 input(ng-model='form.title', name='title')
+label(for='title') Image: 
+input(ng-model='form.text1', name='image')
 p Body:
 textarea(ng-model='form.text', cols='50', rows='15')
 p
-  button(ng-click='submitPost()') Submit Post
+  button(ng-click='submitPost()') Submit Review

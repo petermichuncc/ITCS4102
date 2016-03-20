@@ -2,8 +2,9 @@
  * Serve JSON to our AngularJS client
  */
 
-// For a real app, you'd make database requests here.
+// make a database request here
 // For this example, "data" acts like an in-memory "database"
+
 var data = {
   "posts": [
     {
@@ -25,7 +26,8 @@ exports.posts = function (req, res) {
     posts.push({
       id: i,
       title: post.title,
-      text: post.text.substr(0, 50) + '...'
+      text: post.text.substr(0, 50) + '...',
+      image: post.text1
     });
   });
   res.json({
