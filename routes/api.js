@@ -9,11 +9,15 @@ var data = {
   "posts": [
     {
       "title": "www.google.com",
-      "text": "Best search engine ever"
+      "text": "Best search engine ever",
+      likes: 0,
+      dislikes:0
     },
     {
       "title": "www.yahoo.com",
-      "text": "Another greater search engine."
+      "text": "Another greater search engine.",
+      likes: 0,
+      dislikes:0
     }
   ]
 };
